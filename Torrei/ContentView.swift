@@ -14,32 +14,39 @@ struct ContentView: View {
     var body: some View {
         VStack {
             NavigationView {
-                List {
-                    ForEach(expenses.items) { item in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(item.name)
-                                    .font(.headline)
-                                Text(item.type)
+                ZStack {
+                    LinearGradient(gradient: Gradient(colors: [Color.mint, Color.green]),
+                                   startPoint: .topLeading,
+                                   endPoint: .bottom)
+                    .ignoresSafeArea()
+                    List {
+                        ForEach(expenses.items) { item in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(item.name)
+                                        .font(.headline)
+                                    Text(item.type)
+                                }
+                                
+                                Spacer()
+                                
+                                Text(item.amount, format: .currency(code: "BRL"))
                             }
-                            
-                            Spacer()
-                            
-                            Text(item.amount, format: .currency(code: "BRL"))
+                        }
+                        .onDelete(perform: removeItems)
+                    }
+                    .scrollContentBackground(.hidden)
+                    .navigationTitle("Torrei")
+                    .toolbar {
+                        Button {
+                            showingAddExpense = true
+                        } label: {
+                            Image(systemName: "plus")
                         }
                     }
-                    .onDelete(perform: removeItems)
-                }
-                .navigationTitle("Torrei")
-                .toolbar {
-                    Button {
-                        showingAddExpense = true
-                    } label: {
-                        Image(systemName: "plus")
+                    .sheet(isPresented: $showingAddExpense) {
+                        AddView(expenses: expenses)
                     }
-                }
-                .sheet(isPresented: $showingAddExpense) {
-                    AddView(expenses: expenses)
                 }
             }
         }
