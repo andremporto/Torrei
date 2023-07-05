@@ -11,6 +11,9 @@
 		A27AB0B52A55E51B00F76FB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB0B42A55E51B00F76FB8 /* ContentView.swift */; };
 		A27AB0B72A55E51C00F76FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27AB0B62A55E51C00F76FB8 /* Assets.xcassets */; };
 		A27AB0BA2A55E51C00F76FB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27AB0B92A55E51C00F76FB8 /* Preview Assets.xcassets */; };
+		A27AB0C32A55E5EE00F76FB8 /* TorreiItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB0C22A55E5EE00F76FB8 /* TorreiItem.swift */; };
+		A27AB0C52A55E67800F76FB8 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB0C42A55E67800F76FB8 /* Expenses.swift */; };
+		A27AB0C72A55ED4D00F76FB8 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB0C62A55ED4D00F76FB8 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		A27AB0B42A55E51B00F76FB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A27AB0B62A55E51C00F76FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27AB0B92A55E51C00F76FB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A27AB0C22A55E5EE00F76FB8 /* TorreiItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorreiItem.swift; sourceTree = "<group>"; };
+		A27AB0C42A55E67800F76FB8 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		A27AB0C62A55ED4D00F76FB8 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				A27AB0B22A55E51B00F76FB8 /* TorreiApp.swift */,
 				A27AB0B42A55E51B00F76FB8 /* ContentView.swift */,
+				A27AB0C62A55ED4D00F76FB8 /* AddView.swift */,
+				A27AB0C22A55E5EE00F76FB8 /* TorreiItem.swift */,
+				A27AB0C42A55E67800F76FB8 /* Expenses.swift */,
 				A27AB0B62A55E51C00F76FB8 /* Assets.xcassets */,
 				A27AB0B82A55E51C00F76FB8 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27AB0C52A55E67800F76FB8 /* Expenses.swift in Sources */,
 				A27AB0B52A55E51B00F76FB8 /* ContentView.swift in Sources */,
+				A27AB0C72A55ED4D00F76FB8 /* AddView.swift in Sources */,
 				A27AB0B32A55E51B00F76FB8 /* TorreiApp.swift in Sources */,
+				A27AB0C32A55E5EE00F76FB8 /* TorreiItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
