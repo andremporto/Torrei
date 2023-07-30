@@ -1,6 +1,6 @@
 # Torrei
 
-iOS App to track daily expenses.
+A simple solution to easily and intuitively track your daily expenses.
 
 ## Our Goal
 
