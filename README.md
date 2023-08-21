@@ -1,6 +1,4 @@
-# Torrei
-
-A simple solution to easily and intuitively track your daily expenses.
+![Torrei](https://socialify.git.ci/andremporto/Torrei/image?description=1&descriptionEditable=A%20simple%20solution%20to%20easily%20and%20intuitively%20track%20your%20daily%20expenses.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Auto)
 
 ## Our Goal
 
